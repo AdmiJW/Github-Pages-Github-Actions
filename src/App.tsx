@@ -1,7 +1,13 @@
 function App() {
-    const env = import.meta.env.VITE_EXAMPLE_ENV
+    const secret = import.meta.env.VITE_EXAMPLE_SECRET
+    const variable = import.meta.env.VITE_EXAMPLE_VAR
 
-    return <h1>{env}</h1>
+    return (
+        <main>
+            <h1>{secret}</h1>
+            <h2>{variable}</h2>
+        </main>
+    )
 }
 
 export default App

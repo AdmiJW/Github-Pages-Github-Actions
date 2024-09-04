@@ -22,7 +22,8 @@ concurrency:
 
 #Allow repo secrets
 env:
-    VITE_EXAMPLE_ENV: ${{ secrets.VITE_EXAMPLE_ENV }}
+    VITE_EXAMPLE_SECRET: ${{ secrets.VITE_EXAMPLE_SECRET }}
+    VITE_EXAMPLE_VAR: ${{ vars.VITE_EXAMPLE_VAR }}
 
 jobs:
     # Single deploy job since we're just deploying
